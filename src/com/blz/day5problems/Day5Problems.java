@@ -4,15 +4,18 @@ public class Day5Problems {
 	 public static void main(String[] args) {
 
 	 Scanner sc = new Scanner(System.in);
-	        System.out.println("Enter a dividend");
-	        int n = sc.nextInt();
-	       System.out.println("The dividend is "+n);
-	       System.out.println("Enter divisor");
-	       int div = sc.nextInt();
-	       float quotient = n/div;
-	       int reminder = n%div;
-	       System.out.printf("The quotient is "+quotient);
-	       System.out.println("The reminder is "+reminder);
+	        System.out.println("Enter the value of a : ");
+	        int a  = sc.nextInt();
+	        System.out.println("Enter the value of b : ");
+	        int b = sc.nextInt();
+	        System.out.println("a : "+a);
+	        System.out.println("b : "+b);
+	        int temp = a;
+	        a = b;
+	        b = temp;
+	        System.out.println("The values of a and b after swapping is...");
+	        System.out.println("a : "+a);
+	        System.out.println("b : "+b);
 	       
 	       
 	        }
