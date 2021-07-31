@@ -6,18 +6,17 @@ public class Day5Problems {
 	 Scanner sc = new Scanner(System.in);
 	        System.out.println("Enter a number");
 	        int n = sc.nextInt();
-		 
-	        int i = 0;               
-	        int powerOfTwo = 1;       
-
-	        
-	        while (i <= n) {
-	            System.out.println(i + " " + powerOfTwo);   
-	            powerOfTwo = 2 * powerOfTwo;                
-	            i = i + 1;
+	        for(int i = 1 ; i <= n; i++) {
+	        	if(i<n) {
+	        		System.out.printf("1/%d + ",i);
+	        	}
+	        	else
+	        	System.out.printf("1/%d ",i);
 	        }
-
+	       
+	        }
+	       
 	    }
-	}
+	
 
 
