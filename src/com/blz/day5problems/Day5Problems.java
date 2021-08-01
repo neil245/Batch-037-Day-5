@@ -4,14 +4,15 @@ public class Day5Problems {
 	 public static void main(String[] args) {
 
 	 Scanner sc = new Scanner(System.in);
-	        System.out.println("Enter a number : ");
-	        int n = sc.nextInt();
-	        System.out.println("The number is : "+n);
-	        if(n%2 ==0) {
-	        	System.out.println("The number is even");
+	        char ch ;
+	        System.out.println("Enter an alphabet");
+	        ch = sc.next().charAt(0);
+	        System.out.println(ch);
+	        if(ch=='a' || ch == 'e' ||ch =='i'|| ch=='o' || ch =='u' || ch=='A' || ch=='E'  || ch=='I' || ch=='O' || ch =='U') {
+	        	System.out.println("The entered character is a vowel");
 	        }
 	        else {
-	        	System.out.println("The number is odd");
+	        	System.out.println("The entered character is consonant");
 	        }
 	       
 	        }
